@@ -1,0 +1,30 @@
+---
+title: What
+---
+
+%h1
+  Probability Questions — Coin Flip
+
+%p
+  %b
+    If you drag your mouse over the blue, underlined "2 times" below you can observe the overall probability change.
+
+#coinFlipExample
+  %p
+    If a coin is flipped, the probability that the coin will land heads is 1/2.
+  %p
+    If a coin is flipped
+    %span.TKAdjustableNumber{"data-var" => "timesFlippedNotTails", "data-min" => "1", "data-max" => "4"}
+      time(s)
+    , the probability that
+    %i
+      at least
+    one of the tosses will turn up tails is:
+    1 - (1/
+    %span{"data-var" => "totalNotTailsProbability"}
+      ) =
+    %b
+      %span{"data-var" => "totalNotTailsProbabilityOutcome"}
+        \/
+      %span{"data-var" => "totalNotTailsProbability"}
+        \.

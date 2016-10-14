@@ -1,0 +1,23 @@
+---
+title: What
+---
+
+%h1
+  Probability Questions — Coin Flip
+
+%p
+  %b
+    If you drag your mouse over the "2 times" below you can observe the probability change.
+
+#coinFlipExample
+  %p
+    If a coin is flipped, the probability that the coin will land heads is 1/2.
+  %p
+    If the coin is flipped
+    %span.TKAdjustableNumber{"data-var" => "timesFlipped", "data-min" => "2", "data-max" => "10"}
+      times
+    the probability that it will land heads each time is:
+    %br
+    1/
+    %span{"data-var" => "totalHeadsProbability", "data-format" => "%.0f"}
+      \.

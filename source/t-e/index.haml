@@ -1,0 +1,30 @@
+---
+title: What
+---
+
+%h1
+  Probability Questions — Random Numbers
+
+%p
+  %b
+    If you drag your mouse over the blue, underlined "10" below you can observe the probabilities change.
+
+#coinFlipExample
+  %p
+    Say we randomly generate a number between 1 and 20.
+  %p
+    The probability the generated number is in the range of [1 to
+    %span.TKAdjustableNumber{"data-var" => "firstIntervalLimit", "data-min" => "1", "data-max" => "19"}
+    ] is:
+    %br
+    -# %span{"data-var" => "fractionalProbability"}
+    %span{"data-var" => "firstIntervalLimit"}
+    \/20
+    %br
+  %p
+    The probability of being in the next range: [
+    %span{"data-var" => "nextLowBound"}
+    to 20], is:
+    %br
+    %span{"data-var" => "reverseFraction"}
+      \/20.
